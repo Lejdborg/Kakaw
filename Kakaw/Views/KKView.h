@@ -4,17 +4,33 @@
 /// @name Layer Styles
 /// ----------------------------------------------------------------------------
 
-/** Background color for filling the view */
-@property (nonatomic, strong) NSColor *backgroundColor;
-
 /** Radius for rounding corners on view */
 @property (nonatomic, readwrite) CGFloat cornerRadius;
+
+/** Background color for filling the view */
+@property (nonatomic, strong) NSColor *backgroundColor;
 
 /** The color of the view's border */
 @property (nonatomic, strong) NSColor *borderColor;
 
 /** Specifies the width of the view's border. */
 @property (nonatomic, readwrite) CGFloat borderWidth;
+
+/** Specifies the color of the view’s shadow. */
+@property (nonatomic, strong) NSColor *shadowColor;
+
+/** Specifies the offset of the view’s shadow. */
+@property (nonatomic, readwrite) CGSize shadowOffset;
+
+/** Specifies the opacity of the view’s shadow. */
+@property (nonatomic, readwrite) float shadowOpacity;
+
+/** Specifies the blur radius used to render the view’s shadow. */
+@property (nonatomic, readwrite) CGFloat shadowRadius;
+
+/// ----------------------------------------------------------------------------
+/// @name Gradients
+/// ----------------------------------------------------------------------------
 
 /**
  * Draw a left-right gradient background

@@ -28,13 +28,13 @@
 #pragma mark - LAYER STYLES
 // -----------------------------------------------------------------------------
 
-- (void)setBackgroundColor:(NSColor *)backgroundColor {
-    _backgroundColor = backgroundColor;
+- (void)setCornerRadius:(CGFloat)cornerRadius {
+    _cornerRadius = cornerRadius;
     [self applyLayerProperties];
 }
 
-- (void)setCornerRadius:(CGFloat)cornerRadius {
-    _cornerRadius = cornerRadius;
+- (void)setBackgroundColor:(NSColor *)backgroundColor {
+    _backgroundColor = backgroundColor;
     [self applyLayerProperties];
 }
 
@@ -47,6 +47,30 @@
     _borderWidth = borderWidth;
     [self applyLayerProperties];
 }
+
+- (void)setShadowColor:(NSColor *)shadowColor {
+    _shadowColor = shadowColor;
+    [self applyLayerProperties];
+}
+
+- (void)setShadowOffset:(CGSize)shadowOffset {
+    _shadowOffset = shadowOffset;
+    [self applyLayerProperties];
+}
+
+- (void)setShadowOpacity:(float)shadowOpacity {
+    _shadowOpacity = shadowOpacity;
+    [self applyLayerProperties];
+}
+
+- (void)setShadowRadius:(CGFloat)shadowRadius {
+    _shadowRadius = shadowRadius;
+    [self applyLayerProperties];
+}
+
+// -----------------------------------------------------------------------------
+#pragma mark - GRADIENTS
+// -----------------------------------------------------------------------------
 
 - (void)drawHorizontalGradientWithColors:(NSArray *)colors {
     [self drawGradientWithColors:colors
@@ -119,6 +143,10 @@
 	[self.layer setCornerRadius:self.cornerRadius];
     [self.layer setBorderColor:self.borderColor.CGColor];
     [self.layer setBorderWidth:self.borderWidth];
+    [self.layer setShadowColor:self.shadowColor.CGColor];
+    [self.layer setShadowOffset:self.shadowOffset];
+    [self.layer setShadowOpacity:self.shadowOpacity];
+    [self.layer setShadowRadius:self.shadowRadius];
 
     // Draw gradients
     if (self.gradientColors) {
