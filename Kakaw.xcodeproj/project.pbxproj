@@ -12,11 +12,13 @@
 		E48C1F1316A86C030063198C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C1EFB16A86C030063198C /* Cocoa.framework */; };
 		E48C1F1616A86C030063198C /* Kakaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C1EF816A86C030063198C /* Kakaw.framework */; };
 		E48C1F3316A86DED0063198C /* KKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E48C1F2D16A86DED0063198C /* KKTextFieldCell.m */; };
-		E48C1F3416A86DED0063198C /* KKView.h in Headers */ = {isa = PBXBuildFile; fileRef = E48C1F2E16A86DED0063198C /* KKView.h */; };
+		E48C1F3416A86DED0063198C /* KKView.h in Headers */ = {isa = PBXBuildFile; fileRef = E48C1F2E16A86DED0063198C /* KKView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E48C1F3516A86DED0063198C /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = E48C1F2F16A86DED0063198C /* KKView.m */; };
-		E48C1F3716A86E9C0063198C /* KKTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E48C1F3616A86E9C0063198C /* KKTextFieldCell.h */; };
-		E48C1F3B16A86F460063198C /* NSAttributedString+KKHTMLAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = E48C1F3916A86F460063198C /* NSAttributedString+KKHTMLAttributes.h */; };
+		E48C1F3716A86E9C0063198C /* KKTextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E48C1F3616A86E9C0063198C /* KKTextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E48C1F3B16A86F460063198C /* NSAttributedString+KKHTMLAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = E48C1F3916A86F460063198C /* NSAttributedString+KKHTMLAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E48C1F3C16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = E48C1F3A16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m */; };
+		E48C1F3D16A89F020063198C /* Kakaw.h in Headers */ = {isa = PBXBuildFile; fileRef = E48C1F0816A86C030063198C /* Kakaw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E48C1F9116A926F20063198C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C1F9016A926F20063198C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		E48C1F3616A86E9C0063198C /* KKTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTextFieldCell.h; sourceTree = "<group>"; };
 		E48C1F3916A86F460063198C /* NSAttributedString+KKHTMLAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+KKHTMLAttributes.h"; sourceTree = "<group>"; };
 		E48C1F3A16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+KKHTMLAttributes.m"; sourceTree = "<group>"; };
+		E48C1F9016A926F20063198C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E48C1EFC16A86C030063198C /* Cocoa.framework in Frameworks */,
+				E48C1F9116A926F20063198C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				E48C1EFB16A86C030063198C /* Cocoa.framework */,
+				E48C1F9016A926F20063198C /* QuartzCore.framework */,
 				E48C1F1116A86C030063198C /* SenTestingKit.framework */,
 				E48C1EFD16A86C030063198C /* Other Frameworks */,
 			);
@@ -176,6 +181,7 @@
 				E48C1F3416A86DED0063198C /* KKView.h in Headers */,
 				E48C1F3716A86E9C0063198C /* KKTextFieldCell.h in Headers */,
 				E48C1F3B16A86F460063198C /* NSAttributedString+KKHTMLAttributes.h in Headers */,
+				E48C1F3D16A89F020063198C /* Kakaw.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +441,7 @@
 				E48C1F2416A86C030063198C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E48C1F2516A86C030063198C /* Build configuration list for PBXNativeTarget "KakawTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +450,7 @@
 				E48C1F2716A86C030063198C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
