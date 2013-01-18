@@ -10,6 +10,12 @@
 /** Radius for rounding corners on view */
 @property (nonatomic, readwrite) CGFloat cornerRadius;
 
+/** The color of the view's border */
+@property (nonatomic, strong) NSColor *borderColor;
+
+/** Specifies the width of the view's border. */
+@property (nonatomic, readwrite) CGFloat borderWidth;
+
 /**
  * Draw a left-right gradient background
  *

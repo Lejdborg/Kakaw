@@ -38,6 +38,16 @@
     [self applyLayerProperties];
 }
 
+- (void)setBorderColor:(NSColor *)borderColor {
+    _borderColor = borderColor;
+    [self applyLayerProperties];
+}
+
+- (void)setBorderWidth:(CGFloat)borderWidth {
+    _borderWidth = borderWidth;
+    [self applyLayerProperties];
+}
+
 - (void)drawHorizontalGradientWithColors:(NSArray *)colors {
     [self drawGradientWithColors:colors
                       startPoint:CGPointMake(0.0, 0.5)
@@ -107,6 +117,8 @@
     // Apply layer styles
     [self.layer setBackgroundColor:self.backgroundColor.CGColor];
 	[self.layer setCornerRadius:self.cornerRadius];
+    [self.layer setBorderColor:self.borderColor.CGColor];
+    [self.layer setBorderWidth:self.borderWidth];
 
     // Draw gradients
     if (self.gradientColors) {
