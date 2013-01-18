@@ -19,6 +19,8 @@
 		E48C1F3C16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = E48C1F3A16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m */; };
 		E48C1F3D16A89F020063198C /* Kakaw.h in Headers */ = {isa = PBXBuildFile; fileRef = E48C1F0816A86C030063198C /* Kakaw.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E48C1F9116A926F20063198C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C1F9016A926F20063198C /* QuartzCore.framework */; };
+		E48C1FB316A99B770063198C /* NSColor+KKHexColors.h in Headers */ = {isa = PBXBuildFile; fileRef = E48C1FB116A99B770063198C /* NSColor+KKHexColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E48C1FB416A99B770063198C /* NSColor+KKHexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E48C1FB216A99B770063198C /* NSColor+KKHexColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		E48C1F3916A86F460063198C /* NSAttributedString+KKHTMLAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+KKHTMLAttributes.h"; sourceTree = "<group>"; };
 		E48C1F3A16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+KKHTMLAttributes.m"; sourceTree = "<group>"; };
 		E48C1F9016A926F20063198C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E48C1FB116A99B770063198C /* NSColor+KKHexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+KKHexColors.h"; sourceTree = "<group>"; };
+		E48C1FB216A99B770063198C /* NSColor+KKHexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+KKHexColors.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 			children = (
 				E48C1F3916A86F460063198C /* NSAttributedString+KKHTMLAttributes.h */,
 				E48C1F3A16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m */,
+				E48C1FB116A99B770063198C /* NSColor+KKHexColors.h */,
+				E48C1FB216A99B770063198C /* NSColor+KKHexColors.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 				E48C1F3716A86E9C0063198C /* KKTextFieldCell.h in Headers */,
 				E48C1F3B16A86F460063198C /* NSAttributedString+KKHTMLAttributes.h in Headers */,
 				E48C1F3D16A89F020063198C /* Kakaw.h in Headers */,
+				E48C1FB316A99B770063198C /* NSColor+KKHexColors.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +299,7 @@
 				E48C1F3316A86DED0063198C /* KKTextFieldCell.m in Sources */,
 				E48C1F3516A86DED0063198C /* KKView.m in Sources */,
 				E48C1F3C16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m in Sources */,
+				E48C1FB416A99B770063198C /* NSColor+KKHexColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
