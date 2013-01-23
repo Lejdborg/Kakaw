@@ -401,6 +401,7 @@
 				GCC_PREFIX_HEADER = "Kakaw/Kakaw-Prefix.pch";
 				INFOPLIST_FILE = "Kakaw/Kakaw-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -416,6 +417,7 @@
 				GCC_PREFIX_HEADER = "Kakaw/Kakaw-Prefix.pch";
 				INFOPLIST_FILE = "Kakaw/Kakaw-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
