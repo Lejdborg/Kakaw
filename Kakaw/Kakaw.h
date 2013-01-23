@@ -9,5 +9,7 @@
 // VIEWS
 // -----------------------------------------------------------------------------
 
+#import "KKSecureTextField.h"
+#import "KKTextField.h"
 #import "KKTextFieldCell.h"
 #import "KKView.h"
