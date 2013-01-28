@@ -400,6 +400,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kakaw/Kakaw-Prefix.pch";
 				INFOPLIST_FILE = "Kakaw/Kakaw-Info.plist";
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
@@ -416,6 +418,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kakaw/Kakaw-Prefix.pch";
 				INFOPLIST_FILE = "Kakaw/Kakaw-Info.plist";
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
