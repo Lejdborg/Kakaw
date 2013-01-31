@@ -25,7 +25,7 @@
 - (void)setup {
     [self setWantsLayer:YES];
     [self setLayerContentsPlacement:NSViewLayerContentsPlacementScaleAxesIndependently];
-    [self setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawNever];
+    [self setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawOnSetNeedsDisplay];
 }
 
 // -----------------------------------------------------------------------------
