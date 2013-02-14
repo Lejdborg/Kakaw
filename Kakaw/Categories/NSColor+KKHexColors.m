@@ -2,7 +2,7 @@
 
 @implementation NSColor (KKHexColors)
 
-+ (id)colorWithHex:(NSString *)hex {
++ (instancetype)colorWithHex:(NSString *)hex {
     NSString *hexString = [[hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
 
     // Strip # if it appears

@@ -8,6 +8,6 @@
  *
  * @returns NSColor instance
  */
-+ (id)colorWithHex:(NSString *)hex;
++ (instancetype)colorWithHex:(NSString *)hex;
 
 @end
