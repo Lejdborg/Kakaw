@@ -133,9 +133,11 @@
 // -----------------------------------------------------------------------------
 
 - (void)applyLayerProperties {
-    // Clear sublayers
+    // Clear old gradients
     for (CALayer *layer in self.layer.sublayers) {
-        [layer removeFromSuperlayer];
+        if ([layer isKindOfClass:[CAGradientLayer class]]) {
+            [layer removeFromSuperlayer];
+        }
     }
 
     // Apply layer styles
