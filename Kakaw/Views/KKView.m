@@ -2,6 +2,7 @@
 
 @interface KKView ()
 
+@property (nonatomic, strong) CAGradientLayer *gradientLayer;
 @property (nonatomic, strong) NSArray *gradientColors;
 @property (nonatomic, readwrite) CGPoint gradientStartPoint;
 @property (nonatomic, readwrite) CGPoint gradientEndPoint;
@@ -133,11 +134,9 @@
 // -----------------------------------------------------------------------------
 
 - (void)applyLayerProperties {
-    // Clear old gradients
-    for (CALayer *layer in self.layer.sublayers) {
-        if ([layer isKindOfClass:[CAGradientLayer class]]) {
-            [layer removeFromSuperlayer];
-        }
+    // Clear old gradient
+    if (self.gradientLayer) {
+        [self.gradientLayer removeFromSuperlayer];
     }
 
     // Apply layer styles
@@ -152,23 +151,23 @@
 
     // Draw gradients
     if (self.gradientColors) {
-        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+        [self setGradientLayer:[CAGradientLayer layer]];
 
         NSMutableArray *colors = [NSMutableArray array];
         for (NSColor *color in self.gradientColors) {
             [colors addObject:(id)color.CGColor];
         }
-        [gradientLayer setColors:colors];
+        [self.gradientLayer setColors:colors];
 
-        [gradientLayer setBounds:self.layer.bounds];
-        [gradientLayer setPosition:CGPointMake(self.bounds.size.width / 2.0,
-                                               self.bounds.size.height / 2.0)];
+        [self.gradientLayer setBounds:self.layer.bounds];
+        [self.gradientLayer setPosition:CGPointMake(self.bounds.size.width / 2.0,
+                                                    self.bounds.size.height / 2.0)];
 
-        [gradientLayer setStartPoint:self.gradientStartPoint];
-        [gradientLayer setEndPoint:self.gradientEndPoint];
+        [self.gradientLayer setStartPoint:self.gradientStartPoint];
+        [self.gradientLayer setEndPoint:self.gradientEndPoint];
 
-        [gradientLayer setCornerRadius:self.cornerRadius];
-        [self.layer addSublayer:gradientLayer];
+        [self.gradientLayer setCornerRadius:self.cornerRadius];
+        [self.layer insertSublayer:self.gradientLayer atIndex:0];
     }
 }
 
