@@ -1,6 +1,18 @@
 @interface KKTextField : NSTextField
 
 /// ----------------------------------------------------------------------------
+/// @name Content size
+/// ----------------------------------------------------------------------------
+
+/**
+ * Resize the textfield to fit the contents perfectly within the specified
+ * constraints.
+ *
+ * @param size The maximum size the text field will get
+ */
+- (void)resizeToFit:(NSSize)size;
+
+/// ----------------------------------------------------------------------------
 /// @name Layer Styles
 /// ----------------------------------------------------------------------------
 

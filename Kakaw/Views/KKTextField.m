@@ -29,6 +29,28 @@
 }
 
 // -----------------------------------------------------------------------------
+#pragma mark - CONTENT SIZE
+// -----------------------------------------------------------------------------
+
+- (void)resizeToFit:(NSSize)size {
+    [self.cell setWraps:YES];
+    [self.cell setLineBreakMode:NSLineBreakByWordWrapping];
+
+    // Set the frame constraints
+    NSRect frame = self.frame;
+    frame.size.width = size.width;
+    frame.size.height = size.height;
+
+    // Calculate new size within the constraints
+    frame.size = [self.cell cellSizeForBounds:frame];
+
+    // Make sure the top left corner of the view is at the same position
+    frame.origin.y = frame.origin.y + (self.frame.size.height - frame.size.height);
+
+    [self setFrame:frame];
+}
+
+// -----------------------------------------------------------------------------
 #pragma mark - LAYER STYLES
 // -----------------------------------------------------------------------------
 
