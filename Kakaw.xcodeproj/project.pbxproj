@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E439B94C16D15EBB00198B84 /* KKClipView.h in Headers */ = {isa = PBXBuildFile; fileRef = E439B94816D15EBB00198B84 /* KKClipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E439B94D16D15EBB00198B84 /* KKClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = E439B94916D15EBB00198B84 /* KKClipView.m */; };
+		E439B94E16D15EBB00198B84 /* KKScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = E439B94A16D15EBB00198B84 /* KKScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E439B94F16D15EBB00198B84 /* KKScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E439B94B16D15EBB00198B84 /* KKScrollView.m */; };
 		E482871016B022DA00D02AC9 /* KKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E482870E16B022DA00D02AC9 /* KKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E482871116B022DA00D02AC9 /* KKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E482870F16B022DA00D02AC9 /* KKTextField.m */; };
 		E482871516B028E700D02AC9 /* KKSecureTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E482871316B028E700D02AC9 /* KKSecureTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E439B94816D15EBB00198B84 /* KKClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKClipView.h; sourceTree = "<group>"; };
+		E439B94916D15EBB00198B84 /* KKClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKClipView.m; sourceTree = "<group>"; };
+		E439B94A16D15EBB00198B84 /* KKScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKScrollView.h; sourceTree = "<group>"; };
+		E439B94B16D15EBB00198B84 /* KKScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKScrollView.m; sourceTree = "<group>"; };
 		E482870E16B022DA00D02AC9 /* KKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTextField.h; sourceTree = "<group>"; };
 		E482870F16B022DA00D02AC9 /* KKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTextField.m; sourceTree = "<group>"; };
 		E482871316B028E700D02AC9 /* KKSecureTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSecureTextField.h; sourceTree = "<group>"; };
@@ -166,6 +174,10 @@
 		E48C1F2B16A86DED0063198C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E439B94816D15EBB00198B84 /* KKClipView.h */,
+				E439B94916D15EBB00198B84 /* KKClipView.m */,
+				E439B94A16D15EBB00198B84 /* KKScrollView.h */,
+				E439B94B16D15EBB00198B84 /* KKScrollView.m */,
 				E482871316B028E700D02AC9 /* KKSecureTextField.h */,
 				E482871416B028E700D02AC9 /* KKSecureTextField.m */,
 				E482870E16B022DA00D02AC9 /* KKTextField.h */,
@@ -203,6 +215,8 @@
 				E48C1FB316A99B770063198C /* NSColor+KKHexColors.h in Headers */,
 				E482871016B022DA00D02AC9 /* KKTextField.h in Headers */,
 				E482871516B028E700D02AC9 /* KKSecureTextField.h in Headers */,
+				E439B94C16D15EBB00198B84 /* KKClipView.h in Headers */,
+				E439B94E16D15EBB00198B84 /* KKScrollView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +330,8 @@
 				E48C1FB416A99B770063198C /* NSColor+KKHexColors.m in Sources */,
 				E482871116B022DA00D02AC9 /* KKTextField.m in Sources */,
 				E482871616B028E700D02AC9 /* KKSecureTextField.m in Sources */,
+				E439B94D16D15EBB00198B84 /* KKClipView.m in Sources */,
+				E439B94F16D15EBB00198B84 /* KKScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
