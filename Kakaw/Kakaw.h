@@ -9,6 +9,7 @@
 // VIEWS
 // -----------------------------------------------------------------------------
 
+#import "KKCircularProgressView.h"
 #import "KKClipView.h"
 #import "KKScrollView.h"
 #import "KKSecureTextField.h"

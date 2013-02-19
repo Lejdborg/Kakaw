@@ -29,6 +29,8 @@
 		E48C1F9116A926F20063198C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C1F9016A926F20063198C /* QuartzCore.framework */; };
 		E48C1FB316A99B770063198C /* NSColor+KKHexColors.h in Headers */ = {isa = PBXBuildFile; fileRef = E48C1FB116A99B770063198C /* NSColor+KKHexColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E48C1FB416A99B770063198C /* NSColor+KKHexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E48C1FB216A99B770063198C /* NSColor+KKHexColors.m */; };
+		E4AD0B2716D2781900719930 /* KKCircularProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = E4AD0B2516D2781900719930 /* KKCircularProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4AD0B2816D2781900719930 /* KKCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD0B2616D2781900719930 /* KKCircularProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		E48C1F9016A926F20063198C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E48C1FB116A99B770063198C /* NSColor+KKHexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+KKHexColors.h"; sourceTree = "<group>"; };
 		E48C1FB216A99B770063198C /* NSColor+KKHexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+KKHexColors.m"; sourceTree = "<group>"; };
+		E4AD0B2516D2781900719930 /* KKCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCircularProgressView.h; sourceTree = "<group>"; };
+		E4AD0B2616D2781900719930 /* KKCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCircularProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,8 @@
 		E48C1F2B16A86DED0063198C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E4AD0B2516D2781900719930 /* KKCircularProgressView.h */,
+				E4AD0B2616D2781900719930 /* KKCircularProgressView.m */,
 				E439B94816D15EBB00198B84 /* KKClipView.h */,
 				E439B94916D15EBB00198B84 /* KKClipView.m */,
 				E439B94A16D15EBB00198B84 /* KKScrollView.h */,
@@ -217,6 +223,7 @@
 				E482871516B028E700D02AC9 /* KKSecureTextField.h in Headers */,
 				E439B94C16D15EBB00198B84 /* KKClipView.h in Headers */,
 				E439B94E16D15EBB00198B84 /* KKScrollView.h in Headers */,
+				E4AD0B2716D2781900719930 /* KKCircularProgressView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +339,7 @@
 				E482871616B028E700D02AC9 /* KKSecureTextField.m in Sources */,
 				E439B94D16D15EBB00198B84 /* KKClipView.m in Sources */,
 				E439B94F16D15EBB00198B84 /* KKScrollView.m in Sources */,
+				E4AD0B2816D2781900719930 /* KKCircularProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
