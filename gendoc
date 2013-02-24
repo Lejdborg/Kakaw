@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+appledoc --project-name "Kakaw" --project-company "Christoffer Lejdborg" --company-id "se.lejdborg" --output Documentation --no-create-docset Kakaw/
