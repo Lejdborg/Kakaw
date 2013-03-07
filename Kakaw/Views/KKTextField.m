@@ -1,4 +1,5 @@
 #import "KKTextField.h"
+#import "NSColor+KKColor.h"
 
 @implementation KKTextField
 
@@ -69,7 +70,7 @@
 // -----------------------------------------------------------------------------
 
 - (void)applyLayerProperties {
-    [self.layer setBorderColor:self.borderColor.CGColor];
+    [self.layer setBorderColor:[NSColor CGColorFromNSColor:self.borderColor]];
     [self.layer setBorderWidth:self.borderWidth];
 }
 

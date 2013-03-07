@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 #import "NSAttributedString+KKHTMLAttributes.h"
-#import "NSColor+KKHexColors.h"
+#import "NSColor+KKColor.h"
 
 // -----------------------------------------------------------------------------
 // VIEWS

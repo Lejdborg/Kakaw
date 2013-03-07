@@ -1,4 +1,5 @@
 #import "KKView.h"
+#import "NSColor+KKColor.h"
 
 @interface KKView ()
 
@@ -140,11 +141,11 @@
     }
 
     // Apply layer styles
-    [self.layer setBackgroundColor:self.backgroundColor.CGColor];
+    [self.layer setBackgroundColor:[NSColor CGColorFromNSColor:self.backgroundColor]];
 	[self.layer setCornerRadius:self.cornerRadius];
-    [self.layer setBorderColor:self.borderColor.CGColor];
+    [self.layer setBorderColor:[NSColor CGColorFromNSColor:self.borderColor]];
     [self.layer setBorderWidth:self.borderWidth];
-    [self.layer setShadowColor:self.shadowColor.CGColor];
+    [self.layer setShadowColor:[NSColor CGColorFromNSColor:self.shadowColor]];
     [self.layer setShadowOffset:self.shadowOffset];
     [self.layer setShadowOpacity:self.shadowOpacity];
     [self.layer setShadowRadius:self.shadowRadius];
