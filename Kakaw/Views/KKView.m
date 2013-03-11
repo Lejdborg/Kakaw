@@ -156,7 +156,7 @@
 
         NSMutableArray *colors = [NSMutableArray array];
         for (NSColor *color in self.gradientColors) {
-            [colors addObject:(id)color.CGColor];
+            [colors addObject:(id)[NSColor CGColorFromNSColor:color]];
         }
         [self.gradientLayer setColors:colors];
 
