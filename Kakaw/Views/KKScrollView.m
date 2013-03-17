@@ -1,5 +1,5 @@
 #import "KKScrollView.h"
-#import "KKClipView.h"
+#import "NSColor+KKColor.h"
 
 @implementation KKScrollView
 
@@ -18,15 +18,14 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
 
-    if (![self.contentView isKindOfClass:[KKClipView class]]) {
-        [self makeLayerBacked];
-    }
+    [self makeLayerBacked];
 }
 
 - (void)makeLayerBacked {
     [self setWantsLayer:YES];
     id documentView = self.documentView;
-    [self setContentView:[[KKClipView alloc] initWithFrame:self.contentView.frame]];
+    [self.contentView setLayer:[CAScrollLayer layer]];
+    [self.contentView setWantsLayer:YES];
     [self setDocumentView:documentView];
 }
 
