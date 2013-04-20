@@ -8,11 +8,7 @@ Kakaw supports OSX 10.6+.
 
 ## Documentation
 
-Kakaw is documented using the [AppleDoc](https://github.com/tomaz/appledoc) standard. You can generate a HTML docset with:
-
-    ./gendoc
-
-The documentation will be available in `Documentation/`.
+Kakaw is documented using the [AppleDoc](https://github.com/tomaz/appledoc) standard. The latest generated docset is available at [http://docs.9muses.se/kakaw/](http://docs.9muses.se/kakaw/)
 
 ## Installation
 
