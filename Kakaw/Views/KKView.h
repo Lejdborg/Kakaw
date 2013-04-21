@@ -9,6 +9,7 @@ typedef void (^KKDrawRectBlock)(NSRect dirtyRect);
 /// @name Drawing
 /// ----------------------------------------------------------------------------
 
+/** Inject drawRect: code as a block instead of subclassing KKView. */
 @property (nonatomic, assign) KKDrawRectBlock drawRectBlock;
 
 /// ----------------------------------------------------------------------------
