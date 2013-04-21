@@ -6,7 +6,7 @@
 /**
  * Get a NSColor object from a HEX code.
  *
- * @param hex
+ * @param hex Six character hex color (e.g. `@"FFFFFF"`)
  * @returns NSColor instance
  */
 + (instancetype)colorWithHex:(NSString *)hex;
