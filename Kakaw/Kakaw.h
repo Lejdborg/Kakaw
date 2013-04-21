@@ -4,6 +4,7 @@
 
 #import "NSAttributedString+KKHTMLAttributes.h"
 #import "NSColor+KKColor.h"
+#import "NSView+KKFrameManipulation.h"
 
 // -----------------------------------------------------------------------------
 // VIEWS

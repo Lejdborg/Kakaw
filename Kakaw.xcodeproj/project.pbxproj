@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E45A1D0D172449C9004CF1D1 /* NSView+KKFrameManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = E45A1D0B172449C9004CF1D1 /* NSView+KKFrameManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E45A1D0E172449C9004CF1D1 /* NSView+KKFrameManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A1D0C172449C9004CF1D1 /* NSView+KKFrameManipulation.m */; };
 		E482871016B022DA00D02AC9 /* KKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E482870E16B022DA00D02AC9 /* KKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E482871116B022DA00D02AC9 /* KKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E482870F16B022DA00D02AC9 /* KKTextField.m */; };
 		E482871516B028E700D02AC9 /* KKSecureTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E482871316B028E700D02AC9 /* KKSecureTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E45A1D0B172449C9004CF1D1 /* NSView+KKFrameManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+KKFrameManipulation.h"; sourceTree = "<group>"; };
+		E45A1D0C172449C9004CF1D1 /* NSView+KKFrameManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+KKFrameManipulation.m"; sourceTree = "<group>"; };
 		E482870E16B022DA00D02AC9 /* KKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTextField.h; sourceTree = "<group>"; };
 		E482870F16B022DA00D02AC9 /* KKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTextField.m; sourceTree = "<group>"; };
 		E482871316B028E700D02AC9 /* KKSecureTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSecureTextField.h; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				E48C1F3A16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m */,
 				E48C1FB116A99B770063198C /* NSColor+KKColor.h */,
 				E48C1FB216A99B770063198C /* NSColor+KKColor.m */,
+				E45A1D0B172449C9004CF1D1 /* NSView+KKFrameManipulation.h */,
+				E45A1D0C172449C9004CF1D1 /* NSView+KKFrameManipulation.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 				E482871016B022DA00D02AC9 /* KKTextField.h in Headers */,
 				E482871516B028E700D02AC9 /* KKSecureTextField.h in Headers */,
 				E4AD0B2716D2781900719930 /* KKCircularProgressView.h in Headers */,
+				E45A1D0D172449C9004CF1D1 /* NSView+KKFrameManipulation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +331,7 @@
 				E482871116B022DA00D02AC9 /* KKTextField.m in Sources */,
 				E482871616B028E700D02AC9 /* KKSecureTextField.m in Sources */,
 				E4AD0B2816D2781900719930 /* KKCircularProgressView.m in Sources */,
+				E45A1D0E172449C9004CF1D1 /* NSView+KKFrameManipulation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
