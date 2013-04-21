@@ -10,6 +10,15 @@
 @implementation KKView
 
 // -----------------------------------------------------------------------------
+#pragma mark - DRAWING
+// -----------------------------------------------------------------------------
+
+- (void)setDrawRectBlock:(KKDrawRectBlock)drawRectBlock {
+    _drawRectBlock = drawRectBlock;
+    [self setNeedsDisplay:YES];
+}
+
+// -----------------------------------------------------------------------------
 #pragma mark - VIEW STYLES
 // -----------------------------------------------------------------------------
 
@@ -91,6 +100,10 @@
     }
 
     [path fill];
+
+    if (self.drawRectBlock) {
+        self.drawRectBlock(dirtyRect);
+    }
 }
 
 @end

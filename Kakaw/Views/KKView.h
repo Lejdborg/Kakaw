@@ -1,10 +1,18 @@
+typedef void (^KKDrawRectBlock)(NSRect dirtyRect);
+
 /**
  * Kakaw base view that provides drawing extensions to NSView.
  */
 @interface KKView : NSView
 
 /// ----------------------------------------------------------------------------
-/// @name Layer Styles
+/// @name Drawing
+/// ----------------------------------------------------------------------------
+
+@property (nonatomic, assign) KKDrawRectBlock drawRectBlock;
+
+/// ----------------------------------------------------------------------------
+/// @name View Styles
 /// ----------------------------------------------------------------------------
 
 /** Radius for rounding corners on view */
