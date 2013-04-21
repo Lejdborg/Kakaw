@@ -2,72 +2,35 @@
 #import "NSColor+KKColor.h"
 
 @interface KKView ()
-
 @property (nonatomic, strong) CAGradientLayer *gradientLayer;
 @property (nonatomic, strong) NSArray *gradientColors;
-@property (nonatomic, readwrite) CGPoint gradientStartPoint;
-@property (nonatomic, readwrite) CGPoint gradientEndPoint;
-
+@property (nonatomic, readwrite) CGFloat gradientAngle;
 @end
 
 @implementation KKView
 
 // -----------------------------------------------------------------------------
-#pragma mark - VIEW LIFECYCLE
-// -----------------------------------------------------------------------------
-
-- (id)initWithFrame:(NSRect)frame {
-	if (self = [super initWithFrame:frame]) {
-        [self setWantsLayer:YES];
-        [self setLayerContentsPlacement:NSViewLayerContentsPlacementScaleAxesIndependently];
-        [self setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawNever];
-    }
-
-	return self;
-}
-
-// -----------------------------------------------------------------------------
-#pragma mark - LAYER STYLES
+#pragma mark - VIEW STYLES
 // -----------------------------------------------------------------------------
 
 - (void)setCornerRadius:(CGFloat)cornerRadius {
     _cornerRadius = cornerRadius;
-    [self applyLayerProperties];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setBackgroundColor:(NSColor *)backgroundColor {
     _backgroundColor = backgroundColor;
-    [self applyLayerProperties];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setBorderColor:(NSColor *)borderColor {
     _borderColor = borderColor;
-    [self applyLayerProperties];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setBorderWidth:(CGFloat)borderWidth {
     _borderWidth = borderWidth;
-    [self applyLayerProperties];
-}
-
-- (void)setShadowColor:(NSColor *)shadowColor {
-    _shadowColor = shadowColor;
-    [self applyLayerProperties];
-}
-
-- (void)setShadowOffset:(CGSize)shadowOffset {
-    _shadowOffset = shadowOffset;
-    [self applyLayerProperties];
-}
-
-- (void)setShadowOpacity:(float)shadowOpacity {
-    _shadowOpacity = shadowOpacity;
-    [self applyLayerProperties];
-}
-
-- (void)setShadowRadius:(CGFloat)shadowRadius {
-    _shadowRadius = shadowRadius;
-    [self applyLayerProperties];
+    [self setNeedsDisplay:YES];
 }
 
 // -----------------------------------------------------------------------------
@@ -75,25 +38,19 @@
 // -----------------------------------------------------------------------------
 
 - (void)drawHorizontalGradientWithColors:(NSArray *)colors {
-    [self drawGradientWithColors:colors
-                      startPoint:CGPointMake(0.0, 0.5)
-                        endPoint:CGPointMake(1.0, 0.5)];
+    [self drawGradientWithColors:colors angle:0];
 }
 
 - (void)drawVerticalGradientWithColors:(NSArray *)colors {
-    [self drawGradientWithColors:colors
-                      startPoint:CGPointMake(0.5, 1.0)
-                        endPoint:CGPointMake(0.5, 0.0)];
+    [self drawGradientWithColors:colors angle:270];
 }
 
 - (void)drawGradientWithColors:(NSArray *)colors
-                    startPoint:(CGPoint)startPoint
-                      endPoint:(CGPoint)endPoint {
+                         angle:(CGFloat)angle {
     [self setGradientColors:colors];
-    [self setGradientStartPoint:startPoint];
-    [self setGradientEndPoint:endPoint];
+    [self setGradientAngle:angle];
 
-    [self applyLayerProperties];
+    [self setNeedsDisplay:YES];
 }
 
 // -----------------------------------------------------------------------------
@@ -107,74 +64,33 @@
 }
 
 // -----------------------------------------------------------------------------
-#pragma mark - LAYOUT
+#pragma mark - VIEW DRAWING
 // -----------------------------------------------------------------------------
 
-+ (BOOL)requiresConstraintBasedLayout {
-	return YES;
-}
+- (void)drawRect:(NSRect)dirtyRect {
+    NSRect contentRect = NSInsetRect(self.bounds, self.borderWidth, self.borderWidth);
+    NSBezierPath *path = [NSBezierPath bezierPathWithRect:dirtyRect];
 
-- (void)layout {
-	[super layout];
-}
+    self.backgroundColor ? [self.backgroundColor set] : [[NSColor clearColor] set];
 
-// -----------------------------------------------------------------------------
-#pragma mark - VIEW HIERARCHY
-// -----------------------------------------------------------------------------
-
-- (void)viewDidMoveToSuperview {
-	[self applyLayerProperties];
-}
-
-- (void)viewDidMoveToWindow {
-	[self applyLayerProperties];
-}
-
-// -----------------------------------------------------------------------------
-#pragma mark - LAYER MANAGEMENT
-// -----------------------------------------------------------------------------
-
-- (void)applyLayerProperties {
-    // Clear old gradient
-    if (self.gradientLayer) {
-        [self.gradientLayer removeFromSuperlayer];
+    if (self.cornerRadius) {
+        path = [NSBezierPath bezierPathWithRoundedRect:contentRect
+                                               xRadius:self.cornerRadius
+                                               yRadius:self.cornerRadius];
     }
 
-    // Apply layer styles
-    [self.layer setBackgroundColor:[NSColor CGColorFromNSColor:self.backgroundColor]];
-	[self.layer setCornerRadius:self.cornerRadius];
-    [self.layer setBorderColor:[NSColor CGColorFromNSColor:self.borderColor]];
-    [self.layer setBorderWidth:self.borderWidth];
-    [self.layer setShadowColor:[NSColor CGColorFromNSColor:self.shadowColor]];
-    [self.layer setShadowOffset:self.shadowOffset];
-    [self.layer setShadowOpacity:self.shadowOpacity];
-    [self.layer setShadowRadius:self.shadowRadius];
+    if (self.borderWidth && self.borderColor) {
+        [path setLineWidth:self.borderWidth];
+        [self.borderColor setStroke];
+        [path stroke];
+    }
 
-    // Draw gradients
     if (self.gradientColors) {
-        [self setGradientLayer:[CAGradientLayer layer]];
-
-        NSMutableArray *colors = [NSMutableArray array];
-        for (NSColor *color in self.gradientColors) {
-            [colors addObject:(id)[NSColor CGColorFromNSColor:color]];
-        }
-        [self.gradientLayer setColors:colors];
-
-        [self.gradientLayer setBounds:self.layer.bounds];
-        [self.gradientLayer setPosition:CGPointMake(self.bounds.size.width / 2.0,
-                                                    self.bounds.size.height / 2.0)];
-
-        [self.gradientLayer setStartPoint:self.gradientStartPoint];
-        [self.gradientLayer setEndPoint:self.gradientEndPoint];
-
-        [self.gradientLayer setCornerRadius:self.cornerRadius];
-        [self.layer insertSublayer:self.gradientLayer atIndex:0];
+        NSGradient *gradient = [[NSGradient alloc] initWithColors:self.gradientColors];
+        [gradient drawInBezierPath:path angle:self.gradientAngle];
     }
-}
 
-- (void)setLayer:(CALayer *)layer {
-	[super setLayer:layer];
-	[self applyLayerProperties];
+    [path fill];
 }
 
 @end

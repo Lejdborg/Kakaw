@@ -1,3 +1,6 @@
+/**
+ * Kakaw base view that provides drawing extensions to NSView.
+ */
 @interface KKView : NSView
 
 /// ----------------------------------------------------------------------------
@@ -15,18 +18,6 @@
 
 /** Specifies the width of the view's border. */
 @property (nonatomic, readwrite) CGFloat borderWidth;
-
-/** Specifies the color of the view’s shadow. */
-@property (nonatomic, strong) NSColor *shadowColor;
-
-/** Specifies the offset of the view’s shadow. */
-@property (nonatomic, readwrite) CGSize shadowOffset;
-
-/** Specifies the opacity of the view’s shadow. */
-@property (nonatomic, readwrite) float shadowOpacity;
-
-/** Specifies the blur radius used to render the view’s shadow. */
-@property (nonatomic, readwrite) CGFloat shadowRadius;
 
 /// ----------------------------------------------------------------------------
 /// @name Gradients
@@ -50,12 +41,10 @@
  * Draw a gradient at a custom angle by defining the endpoints
  *
  * @param colors List of NSColors
- * @param startPoint Point to start drawing from
- * @param endPoint Point to end drawing at
+ * @param angle Drawing angle
  */
 - (void)drawGradientWithColors:(NSArray *)colors
-                    startPoint:(CGPoint)startPoint
-                      endPoint:(CGPoint)endPoint;
+                         angle:(CGFloat)angle;
 
 /// ----------------------------------------------------------------------------
 /// @name Mouse Events
