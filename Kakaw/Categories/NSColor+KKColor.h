@@ -11,12 +11,4 @@
  */
 + (instancetype)colorWithHex:(NSString *)hex;
 
-/**
- * Converts an NSColor instance to a CGColorRef.
- *
- * @param color
- * @returns CGColor representation of color
- */
-+ (CGColorRef)CGColorFromNSColor:(NSColor *)color;
-
 @end

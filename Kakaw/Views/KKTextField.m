@@ -4,32 +4,6 @@
 @implementation KKTextField
 
 // -----------------------------------------------------------------------------
-#pragma mark - VIEW LIFECYCLE
-// -----------------------------------------------------------------------------
-
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super initWithCoder:aDecoder]) {
-        [self setup];
-    }
-
-    return self;
-}
-
-- (id)initWithFrame:(NSRect)frame {
-	if (self = [super initWithFrame:frame]) {
-        [self setup];
-    }
-
-	return self;
-}
-
-- (void)setup {
-    [self setWantsLayer:YES];
-    [self setLayerContentsPlacement:NSViewLayerContentsPlacementScaleAxesIndependently];
-    [self setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawOnSetNeedsDisplay];
-}
-
-// -----------------------------------------------------------------------------
 #pragma mark - CONTENT SIZE
 // -----------------------------------------------------------------------------
 
@@ -52,31 +26,33 @@
 }
 
 // -----------------------------------------------------------------------------
-#pragma mark - LAYER STYLES
+#pragma mark - VIEW STYLES
 // -----------------------------------------------------------------------------
 
 - (void)setBorderColor:(NSColor *)borderColor {
     _borderColor = borderColor;
-    [self applyLayerProperties];
+    [self setNeedsDisplay:YES];
 }
 
 - (void)setBorderWidth:(CGFloat)borderWidth {
     _borderWidth = borderWidth;
-    [self applyLayerProperties];
+    [self setNeedsDisplay:YES];
 }
 
 // -----------------------------------------------------------------------------
-#pragma mark - LAYER MANAGEMENT
+#pragma mark - VIEW DRAWING
 // -----------------------------------------------------------------------------
 
-- (void)applyLayerProperties {
-    [self.layer setBorderColor:[NSColor CGColorFromNSColor:self.borderColor]];
-    [self.layer setBorderWidth:self.borderWidth];
-}
+- (void)drawRect:(NSRect)dirtyRect {
+    [super drawRect:dirtyRect];
 
-- (void)setLayer:(CALayer *)layer {
-	[super setLayer:layer];
-	[self applyLayerProperties];
+    if (self.borderColor && self.borderWidth) {
+        NSBezierPath *path = [NSBezierPath bezierPathWithRect:dirtyRect];
+
+        [path setLineWidth:self.borderWidth];
+        [self.borderColor setStroke];
+        [path stroke];
+    }
 }
 
 @end
