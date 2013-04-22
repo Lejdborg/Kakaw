@@ -17,6 +17,7 @@ Kakaw is documented using the [AppleDoc](https://github.com/tomaz/appledoc) stan
 * On the "Build Phases" tab of your application target, add Kakaw to "Target Dependencies".
 * Add Kakaw to the "Link Binary With Libraries" phase.
 * Add Kakaw.framework to your "Copy Frameworks" build phase. If you don't already have one, simply add a "Copy Files" build phase and target the "Frameworks" destination.
+* `#import <Kakaw/Kakaw.h>`
 
 ## License
 
