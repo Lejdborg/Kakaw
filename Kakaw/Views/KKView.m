@@ -2,7 +2,6 @@
 #import "NSColor+KKColor.h"
 
 @interface KKView ()
-@property (nonatomic, strong) CAGradientLayer *gradientLayer;
 @property (nonatomic, strong) NSArray *gradientColors;
 @property (nonatomic, readwrite) CGFloat gradientAngle;
 @end

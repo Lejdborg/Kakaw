@@ -1,7 +1,7 @@
 @interface KKSecureTextField : NSSecureTextField
 
 /// ----------------------------------------------------------------------------
-/// @name Layer Styles
+/// @name View Styles
 /// ----------------------------------------------------------------------------
 
 /** The color of the textview's border */
