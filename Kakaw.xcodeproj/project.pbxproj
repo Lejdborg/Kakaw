@@ -273,6 +273,7 @@
 		E48C1EEE16A86C030063198C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = E48C1EF116A86C030063198C /* Build configuration list for PBXProject "Kakaw" */;
