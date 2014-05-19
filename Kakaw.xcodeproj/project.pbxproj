@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E44B1C7818EEAC6D00CF62D1 /* NSString+KKStringValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = E44B1C7618EEAC6D00CF62D1 /* NSString+KKStringValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E44B1C7918EEAC6D00CF62D1 /* NSString+KKStringValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B1C7718EEAC6D00CF62D1 /* NSString+KKStringValidation.m */; };
 		E45A1D0D172449C9004CF1D1 /* NSView+KKFrameManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = E45A1D0B172449C9004CF1D1 /* NSView+KKFrameManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E45A1D0E172449C9004CF1D1 /* NSView+KKFrameManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A1D0C172449C9004CF1D1 /* NSView+KKFrameManipulation.m */; };
 		E482871016B022DA00D02AC9 /* KKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E482870E16B022DA00D02AC9 /* KKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E44B1C7618EEAC6D00CF62D1 /* NSString+KKStringValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KKStringValidation.h"; sourceTree = "<group>"; };
+		E44B1C7718EEAC6D00CF62D1 /* NSString+KKStringValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KKStringValidation.m"; sourceTree = "<group>"; };
 		E45A1D0B172449C9004CF1D1 /* NSView+KKFrameManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+KKFrameManipulation.h"; sourceTree = "<group>"; };
 		E45A1D0C172449C9004CF1D1 /* NSView+KKFrameManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+KKFrameManipulation.m"; sourceTree = "<group>"; };
 		E482870E16B022DA00D02AC9 /* KKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTextField.h; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 				E48C1F3A16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m */,
 				E48C1FB116A99B770063198C /* NSColor+KKColor.h */,
 				E48C1FB216A99B770063198C /* NSColor+KKColor.m */,
+				E44B1C7618EEAC6D00CF62D1 /* NSString+KKStringValidation.h */,
+				E44B1C7718EEAC6D00CF62D1 /* NSString+KKStringValidation.m */,
 				E45A1D0B172449C9004CF1D1 /* NSView+KKFrameManipulation.h */,
 				E45A1D0C172449C9004CF1D1 /* NSView+KKFrameManipulation.m */,
 			);
@@ -216,6 +222,7 @@
 				E482871016B022DA00D02AC9 /* KKTextField.h in Headers */,
 				E482871516B028E700D02AC9 /* KKSecureTextField.h in Headers */,
 				E4AD0B2716D2781900719930 /* KKCircularProgressView.h in Headers */,
+				E44B1C7818EEAC6D00CF62D1 /* NSString+KKStringValidation.h in Headers */,
 				E45A1D0D172449C9004CF1D1 /* NSView+KKFrameManipulation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +344,7 @@
 				E482871116B022DA00D02AC9 /* KKTextField.m in Sources */,
 				E482871616B028E700D02AC9 /* KKSecureTextField.m in Sources */,
 				E4AD0B2816D2781900719930 /* KKCircularProgressView.m in Sources */,
+				E44B1C7918EEAC6D00CF62D1 /* NSString+KKStringValidation.m in Sources */,
 				E45A1D0E172449C9004CF1D1 /* NSView+KKFrameManipulation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
