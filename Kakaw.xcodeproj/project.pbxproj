@@ -16,9 +16,6 @@
 		E482871516B028E700D02AC9 /* KKSecureTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = E482871316B028E700D02AC9 /* KKSecureTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E482871616B028E700D02AC9 /* KKSecureTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E482871416B028E700D02AC9 /* KKSecureTextField.m */; };
 		E48C1EFC16A86C030063198C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C1EFB16A86C030063198C /* Cocoa.framework */; };
-		E48C1F1216A86C030063198C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C1F1116A86C030063198C /* SenTestingKit.framework */; };
-		E48C1F1316A86C030063198C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C1EFB16A86C030063198C /* Cocoa.framework */; };
-		E48C1F1616A86C030063198C /* Kakaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C1EF816A86C030063198C /* Kakaw.framework */; };
 		E48C1F3316A86DED0063198C /* KKTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E48C1F2D16A86DED0063198C /* KKTextFieldCell.m */; };
 		E48C1F3416A86DED0063198C /* KKView.h in Headers */ = {isa = PBXBuildFile; fileRef = E48C1F2E16A86DED0063198C /* KKView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E48C1F3516A86DED0063198C /* KKView.m in Sources */ = {isa = PBXBuildFile; fileRef = E48C1F2F16A86DED0063198C /* KKView.m */; };
@@ -32,16 +29,6 @@
 		E4AD0B2716D2781900719930 /* KKCircularProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = E4AD0B2516D2781900719930 /* KKCircularProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4AD0B2816D2781900719930 /* KKCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD0B2616D2781900719930 /* KKCircularProgressView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E48C1F1416A86C030063198C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E48C1EEE16A86C030063198C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E48C1EF716A86C030063198C;
-			remoteInfo = Kakaw;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E44B1C7618EEAC6D00CF62D1 /* NSString+KKStringValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KKStringValidation.h"; sourceTree = "<group>"; };
@@ -60,9 +47,6 @@
 		E48C1F0316A86C030063198C /* Kakaw-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kakaw-Info.plist"; sourceTree = "<group>"; };
 		E48C1F0716A86C030063198C /* Kakaw-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kakaw-Prefix.pch"; sourceTree = "<group>"; };
 		E48C1F0816A86C030063198C /* Kakaw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kakaw.h; sourceTree = "<group>"; };
-		E48C1F1016A86C030063198C /* KakawTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakawTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E48C1F1116A86C030063198C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E48C1F1916A86C030063198C /* KakawTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KakawTests-Info.plist"; sourceTree = "<group>"; };
 		E48C1F2D16A86DED0063198C /* KKTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTextFieldCell.m; sourceTree = "<group>"; };
 		E48C1F2E16A86DED0063198C /* KKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKView.h; sourceTree = "<group>"; };
 		E48C1F2F16A86DED0063198C /* KKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKView.m; sourceTree = "<group>"; };
@@ -86,16 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E48C1F0C16A86C030063198C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E48C1F1216A86C030063198C /* SenTestingKit.framework in Frameworks */,
-				E48C1F1316A86C030063198C /* Cocoa.framework in Frameworks */,
-				E48C1F1616A86C030063198C /* Kakaw.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -103,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				E48C1F0116A86C030063198C /* Kakaw */,
-				E48C1F1716A86C030063198C /* KakawTests */,
 				E48C1EFA16A86C030063198C /* Frameworks */,
 				E48C1EF916A86C030063198C /* Products */,
 			);
@@ -113,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				E48C1EF816A86C030063198C /* Kakaw.framework */,
-				E48C1F1016A86C030063198C /* KakawTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,7 +95,6 @@
 			children = (
 				E48C1EFB16A86C030063198C /* Cocoa.framework */,
 				E48C1F9016A926F20063198C /* QuartzCore.framework */,
-				E48C1F1116A86C030063198C /* SenTestingKit.framework */,
 				E48C1EFD16A86C030063198C /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -155,22 +126,6 @@
 			children = (
 				E48C1F0316A86C030063198C /* Kakaw-Info.plist */,
 				E48C1F0716A86C030063198C /* Kakaw-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E48C1F1716A86C030063198C /* KakawTests */ = {
-			isa = PBXGroup;
-			children = (
-				E48C1F1816A86C030063198C /* Supporting Files */,
-			);
-			path = KakawTests;
-			sourceTree = "<group>";
-		};
-		E48C1F1816A86C030063198C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E48C1F1916A86C030063198C /* KakawTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -248,25 +203,6 @@
 			productReference = E48C1EF816A86C030063198C /* Kakaw.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E48C1F0F16A86C030063198C /* KakawTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E48C1F2516A86C030063198C /* Build configuration list for PBXNativeTarget "KakawTests" */;
-			buildPhases = (
-				E48C1F0B16A86C030063198C /* Sources */,
-				E48C1F0C16A86C030063198C /* Frameworks */,
-				E48C1F0D16A86C030063198C /* Resources */,
-				E48C1F0E16A86C030063198C /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E48C1F1516A86C030063198C /* PBXTargetDependency */,
-			);
-			name = KakawTests;
-			productName = KakawTests;
-			productReference = E48C1F1016A86C030063198C /* KakawTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -275,11 +211,6 @@
 			attributes = {
 				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0500;
-				TargetAttributes = {
-					E48C1F0F16A86C030063198C = {
-						TestTargetID = E48C1EF716A86C030063198C;
-					};
-				};
 			};
 			buildConfigurationList = E48C1EF116A86C030063198C /* Build configuration list for PBXProject "Kakaw" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -294,7 +225,6 @@
 			projectRoot = "";
 			targets = (
 				E48C1EF716A86C030063198C /* Kakaw */,
-				E48C1F0F16A86C030063198C /* KakawTests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,30 +237,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E48C1F0D16A86C030063198C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E48C1F0E16A86C030063198C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E48C1EF316A86C030063198C /* Sources */ = {
@@ -349,22 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E48C1F0B16A86C030063198C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E48C1F1516A86C030063198C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E48C1EF716A86C030063198C /* Kakaw */;
-			targetProxy = E48C1F1416A86C030063198C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E48C1F2016A86C030063198C /* Debug */ = {
@@ -456,32 +348,6 @@
 			};
 			name = Release;
 		};
-		E48C1F2616A86C030063198C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Kakaw/Kakaw-Prefix.pch";
-				INFOPLIST_FILE = "KakawTests/KakawTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		E48C1F2716A86C030063198C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Kakaw/Kakaw-Prefix.pch";
-				INFOPLIST_FILE = "KakawTests/KakawTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -499,15 +365,6 @@
 			buildConfigurations = (
 				E48C1F2316A86C030063198C /* Debug */,
 				E48C1F2416A86C030063198C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E48C1F2516A86C030063198C /* Build configuration list for PBXNativeTarget "KakawTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E48C1F2616A86C030063198C /* Debug */,
-				E48C1F2716A86C030063198C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
