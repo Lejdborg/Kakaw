@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E416940319D6D3AA004CFF75 /* NSScreen+KKScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = E416940119D6D3AA004CFF75 /* NSScreen+KKScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E416940419D6D3AA004CFF75 /* NSScreen+KKScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E416940219D6D3AA004CFF75 /* NSScreen+KKScreen.m */; };
 		E44B1C7818EEAC6D00CF62D1 /* NSString+KKStringValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = E44B1C7618EEAC6D00CF62D1 /* NSString+KKStringValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E44B1C7918EEAC6D00CF62D1 /* NSString+KKStringValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = E44B1C7718EEAC6D00CF62D1 /* NSString+KKStringValidation.m */; };
 		E45A1D0D172449C9004CF1D1 /* NSView+KKFrameManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = E45A1D0B172449C9004CF1D1 /* NSView+KKFrameManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E416940119D6D3AA004CFF75 /* NSScreen+KKScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScreen+KKScreen.h"; sourceTree = "<group>"; };
+		E416940219D6D3AA004CFF75 /* NSScreen+KKScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScreen+KKScreen.m"; sourceTree = "<group>"; };
 		E44B1C7618EEAC6D00CF62D1 /* NSString+KKStringValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KKStringValidation.h"; sourceTree = "<group>"; };
 		E44B1C7718EEAC6D00CF62D1 /* NSString+KKStringValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KKStringValidation.m"; sourceTree = "<group>"; };
 		E45A1D0B172449C9004CF1D1 /* NSView+KKFrameManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+KKFrameManipulation.h"; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 				E48C1F3A16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m */,
 				E48C1FB116A99B770063198C /* NSColor+KKColor.h */,
 				E48C1FB216A99B770063198C /* NSColor+KKColor.m */,
+				E416940119D6D3AA004CFF75 /* NSScreen+KKScreen.h */,
+				E416940219D6D3AA004CFF75 /* NSScreen+KKScreen.m */,
 				E44B1C7618EEAC6D00CF62D1 /* NSString+KKStringValidation.h */,
 				E44B1C7718EEAC6D00CF62D1 /* NSString+KKStringValidation.m */,
 				E45A1D0B172449C9004CF1D1 /* NSView+KKFrameManipulation.h */,
@@ -178,6 +184,7 @@
 				E482871516B028E700D02AC9 /* KKSecureTextField.h in Headers */,
 				E4AD0B2716D2781900719930 /* KKCircularProgressView.h in Headers */,
 				E44B1C7818EEAC6D00CF62D1 /* NSString+KKStringValidation.h in Headers */,
+				E416940319D6D3AA004CFF75 /* NSScreen+KKScreen.h in Headers */,
 				E45A1D0D172449C9004CF1D1 /* NSView+KKFrameManipulation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E416940419D6D3AA004CFF75 /* NSScreen+KKScreen.m in Sources */,
 				E48C1F3316A86DED0063198C /* KKTextFieldCell.m in Sources */,
 				E48C1F3516A86DED0063198C /* KKView.m in Sources */,
 				E48C1F3C16A86F460063198C /* NSAttributedString+KKHTMLAttributes.m in Sources */,
