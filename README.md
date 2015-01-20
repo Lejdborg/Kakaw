@@ -2,7 +2,7 @@
 
 Kakaw is a set of extensions to Cocoa (mainly AppKit) that aims to make OSX UI development easier and faster.
 
-If you are using Kakaw in your project,  [let me know](https://twitter.com/Lejdborg). You're not obligated to, but it would make my day :)
+If you are using Kakaw in your project,  [let me know](mailto:hello@9muses.se). You're not obligated to, but it would make my day :)
 
 Kakaw supports OSX 10.6+.
 
